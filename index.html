@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+    <title>Min Store</title>
+</head>
+<body>
+   <div class="main-container">
+    
+    <div class="main">
+        <nav class="nav-index">
+            <h3 class="site-name">Mini store</h3>
+            <div class="nav-centre-part-computer-hidden nav-centre-part">
+                <div class="nav-centre-part">
+                    <a href="">HOME</a>
+                    <a href="">SERVICE</a>
+                    <a href=""> PRODUCT</a>
+                    <a href="">WATCHES</a>
+                    <a href="">SALES</a>
+                    <a href="">BLOG</a>
+                    <div>
+                        <button class="navg-open-list" onclick="onClickPages()">PAGES &#x25BC</button>
+                        <div class="list-navg list-navg-hidden"  id="pages">
+                            <a href="" class="list-navg-item" >
+                                <div class="list-navg-item-title">
+                                    ABOUT
+                                </div>
+                            </a>
+                    <a href="" class="list-navg-item">
+                        <div class="list-navg-item-title">
+                            BLOG
+                        </div>
+                    </a>
+                    <a href="" class="list-navg-item"> 
+                        <div class="list-navg-item-title">
+                            SHOP
+                        </div>
+                    </a>
+                    <a href=""class="list-navg-item">
+                        <div class="list-navg-item-title">
+                            CART
+                        </div>
+                    </a>
+                    <a href="" class="list-navg-item">
+                        <div class="list-navg-item-title">
+                            CHECKOUT
+                        </div>
+                    </a>
+                    <a href="" class="list-navg-item">
+                        <div class="list-navg-item-title">
+                            SINGLE POST
+                        </div>
+                    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nv-end">
+                    <i class="fas fa-search"></i>
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+
+            </div>
+            <div class="nav-centre-part-phone-hidden" onclick="openNavBarPhone()">
+                <div class="slack1"></div>
+                <div class="slack2"></div>
+                <div class="slack3"></div>
+        </div>
+        
+        </nav>
+        <!--<nav class="nav-mobile">
+                    
+        </nav>-->
+            <div class="center-part">
+                <div class="slider-show">
+                    
+                    <p class="navg-slider-show-left" onclick="scrollToPrev()"><</p>
+                    <div class="slider-show-item" id="slider-show-item1">
+                        <div></div>
+                      
+                       <div>
+                        <p>YOUR PRODUCT ARE GRADE</p>
+                        <button class="slider-show-item-button"> SHOP PRODUCT</button>
+                       </div>
+                        <img src="./Capture.png" alt="">
+                    </div>
+                    <div class="slider-show-item" id="slider-show-item2">
+                        <div></div>
+                      
+                       <div>
+                        <p>YOUR PRODUCT ARE GRADE</p>
+                        <button class="slider-show-item-button"> SHOP PRODUCT</button>
+                       </div>
+                        <img src="./Capture.png" alt="">
+                    </div>
+                    <p class="navg-slider-show-right"  onclick="scrollToNext()">></p>
+                </div>
+            </div>
+        <div class="info-part">
+            <div class="info-part-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#82B7CE" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>
+                <h3>Free delivery</h3>
+                <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="info-part-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#82B7CE" class="bi bi-award" viewBox="0 0 16 16">
+                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                  </svg>
+                <h3>Free delivery</h3>
+                <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="info-part-item">
+                <img src="./Untitled.svg" alt="" height="50px">
+                <h3>Free delivery</h3>
+                <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="info-part-item">
+                <div style="font-size: 20px;width: 0px;transform: scale(2); color: #82B7CE;">&#x26E8;</div>
+                <h3>Free delivery</h3>
+                <p>Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        
+        <div class="center-product-show">
+            <div class="container-product-show">
+                <div class="show-product">
+                    <div class="product-show-hidder"><p class="product-show-title">Mobile Products</p>
+                    <a href="" class="product-show-url">GO TO SHOP</a>
+                    </div>
+                    <div class="product">
+                        <img src="./product-item1.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./product-item1.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./product-item1.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./product-item1.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./product-item1.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./product-item1.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div> 
+                    </div>
+            </div>
+        </div>
+       <div class="circle-scroll-product-show">
+        <span class="dot "></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        </div>
+        <div class="center-product-show">
+            <div class="container-product-show">
+                <div class="show-product">
+                    <div class="product-show-hidder"><p class="product-show-title">Mobile Products</p>
+                    <a href="" class="product-show-url">GO TO SHOP</a>
+                    </div>
+                    <div class="product">
+                        <img src="./watch.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./watch.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./watch.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./watch.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./watch.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div>
+                    <div class="product">
+                        <img src="./watch.jpg" alt="" width="300" height="">
+                        <button class="btn-add-to-card">Add To Card
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                              </svg>
+                        </button>
+                        <div class="product-name-price"><h3 class="product-name"> Pink watch </h3> <h3 class="product-price">$870</h3></div>
+                    </div> 
+                    </div>
+            </div>
+        </div>
+       <div class="circle-scroll-product-show">
+        <span class="dot "></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        </div>
+        <div class="banner" >
+            <p class="text-banner">
+                <span style="" >10% off</span>
+                <br>
+               <span> New year sale</span>
+               <button class="button-banner">SHOP SALE</button>
+            </p>
+            <img src="./phone-image.png"   alt="">
+        </div>
+        <div class="posts">
+            <div class="posts-hidder"><p class="posts-title">LATEST POSTS</p>
+                <a href="" class="posts-hidder-url">Read BLOG</a>
+                </div>
+            <div class="post-container">
+                <div class="post">
+                    <img src="./post-item1.jpg"  alt="">
+                    <br>
+                    <span class="post-title"> feb 22, 2023 - Gadgets </span>
+                    <br>
+                    <span class="post-hint">Get some cool gadgets in 2023</span>
+                </div>
+                <div class="post">
+                    <img src="./post-item1.jpg"  alt="">
+                    <br>
+                    <span class="post-title"> feb 22, 2023 - Gadgets </span>
+                    <br>
+                    <span class="post-hint">Get some cool gadgets in 2023</span>
+                </div>
+                <div class="post">
+                    <img src="./post-item1.jpg"  alt="">
+                    <br>
+                    <span class="post-title"> feb 22, 2023 - Gadgets </span>
+                    <br>
+                    <span class="post-hint">Get some cool gadgets in 2023</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="center-quote">
+            <div class="quotes">
+                <div class="quote-icon">
+                    &#128631;
+                </div>
+               <div class="container-quotes">
+                <button class="btn-quote-navg"><</button>
+                <div class="quotes-content">
+                    <div>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”
+
+                    </div>
+                    <div>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”
+                        
+                    </div>
+                    <div>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”
+                        
+                    </div>
+                    <div>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”
+                        
+                    </div>
+                </div>
+                <button class="btn-quote-navg">></button>
+               </div>
+            </div>
+        </div>
+</div>
+       </div>
+    <div class="container-navg-shadow-hidden container-navg-shadow">
+        
+    </div>
+    <nav class="nav-mobile nav-mobile-hidden" >
+        <div class="close-navg-mobile">
+            <p onclick=" closeNavBarPhone()">╳</p>
+        </div>
+
+       <div>
+        <div class="nav-centre-part-mobile">
+            <a href="">HOME</a>
+            <a href="">SERVICE</a>
+            <a href=""> PRODUCT</a>
+            <a href="">WATCHES</a>
+            <a href="">SALES</a>
+            <a href="">BLOG</a>
+            <div>
+                <button class="navg-open-list" onclick="onClickPages2()">PAGES &#x25BC</button>
+                <div class="list-navg list-navg-hidden"  id="pages2">
+                    <a href="" class="list-navg-item" >
+                        <div class="list-navg-item-title">
+                            ABOUT
+                        </div>
+                    </a>
+            <a href="" class="list-navg-item">
+                <div class="list-navg-item-title">
+                    BLOG
+                </div>
+            </a>
+            <a href="" class="list-navg-item"> 
+                <div class="list-navg-item-title">
+                    SHOP
+                </div>
+            </a>
+            <a href=""class="list-navg-item">
+                <div class="list-navg-item-title">
+                    CART
+                </div>
+            </a>
+            <a href="" class="list-navg-item">
+                <div class="list-navg-item-title">
+                    CHECKOUT
+                </div>
+            </a>
+            <a href="" class="list-navg-item">
+                <div class="list-navg-item-title">
+                    SINGLE POST
+                </div>
+            </a>
+                </div>
+            </div>
+            <div>
+       </div>
+       
+    </nav>
+   </div>
+    <script src="./index.js"></script>
+</body>
+</html>
+
